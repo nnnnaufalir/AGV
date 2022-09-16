@@ -27,9 +27,7 @@ ser.flush()
 a = Toolbox()
 a.setState("A")
 target="D"
-# a.simulation(a.pathPlanningStep("D"))
-#run = a.pathPlanningStep("D", status=False)
-#run = a.pathPlanningStep("f{target}", status=False)
+
 run = a.pathPlanningStep(target,status=False)
 
 def predictVision():
@@ -87,11 +85,3 @@ while True:
             else : 
                 counterA = 0
             print(target + " " + line)
-        #print(line)
-    #time.sleep(0.1)
-
-
-        # print("coba 2")
-        # if line == "Path Selesai":
-        #         counterA +=1
-        # print(line + " " + str(counterA) + rencana())
